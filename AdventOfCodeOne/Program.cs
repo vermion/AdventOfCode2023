@@ -6,6 +6,8 @@ namespace AdventOfCode2023
     {
         static void Main(string[] args)
         {
+            FirstDay.FirstDay.Execute();
+
             SecondDay.SecondDay.Execute();
         }
     }

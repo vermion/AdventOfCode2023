@@ -4,7 +4,7 @@
     {
         public static void Execute()
         {
-            var inputs = File.ReadAllLines("InputData.txt").ToList();
+            var inputs = File.ReadAllLines(".\\SecondDay\\InputData.txt").ToList();
             List<string> numbers = new List<string> { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
             List<string> numbersAsText = new List<string> { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "zero" };
 
