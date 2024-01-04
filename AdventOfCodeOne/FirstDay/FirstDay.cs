@@ -4,20 +4,20 @@
     {
         public static void Execute()
         {
-            var inputs = File.ReadAllLines(".\\SecondDay\\InputData.txt").ToList();
+            var rows = File.ReadAllLines(".\\SecondDay\\InputData.txt").ToList();
             List<string> numbers = new List<string> { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
             List<string> numbersAsText = new List<string> { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "zero" };
 
             int total = 0;
-            foreach (var input in inputs)
+            foreach (var row in rows)
             {
                 List<NumberMetaInfo> numbersMetaInfo = new List<NumberMetaInfo>();
-                if (input.Count() > 0)
+                if (row.Count() > 0)
                 {
                     foreach (var numberAsText in numbersAsText)
                     {
-                        var result = input.IndexOf(numberAsText);
-                        var lastResult = input.LastIndexOf(numberAsText);
+                        var result = row.IndexOf(numberAsText);
+                        var lastResult = row.LastIndexOf(numberAsText);
 
                         if (result != -1)
                         {
@@ -31,8 +31,8 @@
 
                     foreach (var number in numbers)
                     {
-                        var result = input.IndexOf(number);
-                        var lastResult = input.LastIndexOf(number);
+                        var result = row.IndexOf(number);
+                        var lastResult = row.LastIndexOf(number);
 
                         if (result != -1)
                         {
@@ -87,7 +87,7 @@
                     return "10";
                 // Add more cases as needed
                 default:
-                    throw new ArgumentException("Invalid text input");
+                    throw new ArgumentException("Invalid text row");
             }
         }
     }

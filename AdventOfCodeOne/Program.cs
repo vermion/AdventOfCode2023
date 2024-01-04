@@ -6,9 +6,11 @@ namespace AdventOfCode2023
     {
         static void Main(string[] args)
         {
-            FirstDay.FirstDay.Execute();
+            // FirstDay.FirstDay.Execute();
 
-            SecondDay.SecondDay.Execute();
+            // SecondDay.SecondDay.Execute();
+
+            ThirdDay.ThirdDay.Execute();
         }
     }
 }
